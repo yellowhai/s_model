@@ -1,0 +1,14 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "s_model"
+include ':app'
+include ':common'
+include ':h_order'
+include ':h_shop'
+include ':annotation'
+include ':annotation_processor'

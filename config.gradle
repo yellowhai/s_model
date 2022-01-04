@@ -1,0 +1,23 @@
+ext{
+    isRelease = true //是否是组件化
+
+    //android构建配置
+    android_models = [
+            compileSdk : 31,
+            minSdk : 23,
+            targetSdk : 31
+    ]
+
+    // order模块与personal模块自己的applicationId
+    app_id = [
+            "order": 'com.hh.h_order',
+            "shop": 'com.hh.h_shop'
+    ]
+
+    app_dependenciesList = [
+            "core_ktx" : "androidx.core:core-ktx:1.7.0",
+            "appcompat" : 'androidx.appcompat:appcompat:1.4.0',
+            "material" : 'com.google.android.material:material:1.4.0',
+            "constraintlayout" : 'androidx.constraintlayout:constraintlayout:2.1.1'
+    ]
+}
